@@ -21,28 +21,6 @@ Microservizio Spring Boot che integra dati da REST Countries API e Open-Meteo AP
 - Maven
 - Docker
 
-## Struttura del progetto
-src/
-├── main/
-│ ├── java/
-│ │ └── it/
-│ │ └── apuliadigitalmaker/
-│ │ └── esame/
-│ │ ├── src/
-│ │ │ ├── client/ # Feign clients
-│ │ │ ├── controller/ # REST controllers
-│ │ │ ├── dto/ # Data Transfer Objects
-│ │ │ ├── entity/ # JPA entities
-│ │ │ ├── repository/ # Spring Data repositories
-│ │ │ └── service/ # Business logic
-│ │ └── Application.java # Main class
-│ └── resources/
-│ └── application.properties # Configuration
-pom.xml # Maven dependencies
-Dockerfile # Container configuration
-
-text
-
 ## Come eseguire
 
 ### Prerequisiti
@@ -51,7 +29,7 @@ text
 - Docker (opzionale)
 
 ### Con Maven
-```bash
+
 mvn clean package
 java -jar target/country-weather-app-0.0.1-SNAPSHOT.jar
 
